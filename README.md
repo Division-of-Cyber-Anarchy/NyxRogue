@@ -63,7 +63,7 @@ Collected data is:
 
 ### 4. **System Activation**  
 NyxRogue integrates scripts from **[massgrave.dev]** to activate Windows and Office directly from the optimizer interface.  
-   - **Acknowledgment**: A huge thank you to the contributors of massgrave.dev for their work and dedication.
+   - **Acknowledgment**: A huge thank you to the contributors of massgrave.dev for their work.
 
 ### 5. **Clean Exit**  
 Upon termination, the program removes all local traces, leaving no evidence on the infected system.
