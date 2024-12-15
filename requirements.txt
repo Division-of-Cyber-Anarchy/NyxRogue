@@ -1,0 +1,8 @@
+psutil
+requests
+wmi
+pynput
+boto3
+botocore
+sv-ttk
+NyxCrypta
