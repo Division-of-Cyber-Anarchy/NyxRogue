@@ -97,6 +97,11 @@ Upon termination, the program removes all local traces, leaving no evidence on t
    ```bash
    python NyxRogue.py
    ```
+5. Stop the keylogger
+   Close the optimizer window.
+   Then successively press the "keystop" keys without the quotation marks.
+   If the .nyx and .pem files do not appear in the project root, the keylogger is closed.
+   If not, press the “keystop” key again.
 
 [massgrave.dev]: <https://massgrave.dev>
 [Division of Cyber Anarchy]: <https://github.com/Division-of-Cyber-Anarchy>
