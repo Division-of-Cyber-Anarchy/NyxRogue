@@ -76,8 +76,28 @@ Upon termination, the program removes all local traces, leaving no evidence on t
    ```bash
    git clone https://github.com/Division-of-Cyber-Anarchy/NyxRogue.git
    cd nyxrogue
+   ```
+2. Install the requirements
+   ```bash
    pip install -r requirements.txt
+   ```
+3. Configure the necessary variables
+
+   Before running **NyxRogue**, you need to configure the following variables:
+   - Encryption password:
+      - Line 34: Replace ```bash password = "my_strong_password"``` with a strong password of your choice.
+      - This password will be used to generate encryption keys via NyxCrypta.
+   - Backblaze B2 Storage Details:
+      - Line 437: Replace ```bash endpoint = "https://example.backblazeb2.com"``` with the correct endpoint for your bucket.
+      - Line 438: Enter your Backblaze ```bash key_id in key_id = "your key_id"```.
+      - Line 439: Add your application_key in ```bash application_key = "your app_key"```.
+   - Bucket Name:
+      - Line 582: Change ```bash bucket_name = "my-bucket-name"``` to match the name of your Backblaze bucket.
+4. Run the script:
+   ```bash
    python NyxRogue.py
+   ```
+
 [massgrave.dev]: <https://massgrave.dev>
 [Division of Cyber Anarchy]: <https://github.com/Division-of-Cyber-Anarchy>
 [Backblaze]: <https://www.backblaze.com/>
