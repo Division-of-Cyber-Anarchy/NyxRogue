@@ -74,10 +74,10 @@ Upon termination, the program removes all local traces, leaving no evidence on t
 
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/Division-of-Cyber-Anarchy/nyxrogue.git
+   git clone https://github.com/Division-of-Cyber-Anarchy/NyxRogue.git
    cd nyxrogue
    pip install -r requirements.txt
-   python nyxrogue.py
+   python NyxRogue.py
 [massgrave.dev]: <https://massgrave.dev>
 [Division of Cyber Anarchy]: <https://github.com/Division-of-Cyber-Anarchy>
 [Backblaze]: <https://www.backblaze.com/>
