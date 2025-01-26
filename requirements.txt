@@ -4,5 +4,5 @@ pynput
 boto3
 botocore
 sv-ttk
-NyxCrypta
+nyxcrypta
 wmi

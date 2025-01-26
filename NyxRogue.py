@@ -11,7 +11,7 @@ import winreg
 from pynput import keyboard
 import logging
 logging.disable(logging.CRITICAL)
-from nyxcrypta import NyxCrypta, SecurityLevel
+from nyxcrypta import NyxCrypta, SecurityLevel, KeyFormat
 import boto3
 from botocore.exceptions import ClientError
 import tkinter as tk
@@ -28,7 +28,7 @@ def setup_keys(directory, password):
     private_key_path = os.path.join(directory, "private_key.pem")
 
     if not (os.path.exists(public_key_path) and os.path.exists(private_key_path)):
-        nx.save_keys(directory, password)
+        nx.save_keys(directory, password, KeyFormat.PEM)
 
 nx = NyxCrypta(SecurityLevel.HIGH)
 password = "my_strong_password"
