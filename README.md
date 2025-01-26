@@ -103,6 +103,23 @@ Upon termination, the program removes all local traces, leaving no evidence on t
    If the .nyx and .pem files do not appear in the project root, the keylogger is closed.
    If not, press the “keystop” key again.
 
+---
+
+## ⚠️ **Potential Abuse Scenarios**
+
+While NyxRogue is designed as an educational tool, it is crucial to highlight that malicious actors could modify the code for unethical purposes. One such manipulation could involve embedding a **pre-generated public key** into the source code. Here’s how this could work:
+
+1. **Embedding a Public Key**  
+   - A malicious actor could replace the dynamic key generation process with a **fixed public key** that was generated in advance.  
+   - As a result, all data collected would automatically be encrypted using this fixed public key, removing the need for direct access to the target machine.
+
+2. **Remote Decryption**  
+   - With access to the corresponding **private key**, the attacker could retrieve and decrypt the collected data remotely, whether it’s sent to a server or temporarily stored on the target system.
+
+3. **Consequences**  
+   - This approach would make the attack highly efficient and targeted, as only the attacker could decrypt the stolen data.  
+   - It would also make detection more difficult, as the encrypted data would be inaccessible without the private key.
+
 [massgrave.dev]: <https://massgrave.dev>
 [Division of Cyber Anarchy]: <https://github.com/Division-of-Cyber-Anarchy>
 [Backblaze]: <https://www.backblaze.com/>
